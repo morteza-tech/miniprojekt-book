@@ -1,0 +1,124 @@
+/* Generell stil for begge versjoner */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#resultsContainer {
+  text-align: left;
+}
+
+/* Responsiv design for mobil */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Responsiv design for desktop */
+@media only screen and (min-width: 601px) {
+  .search-container {
+    display: flex;
+    justify-content: flex-end; /* Endre til flex-end for å plassere til høyre */
+  }
+
+  input {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  button {
+    width: 30%;
+  }
+
+  .book {
+    width: 100%;
+  }
+}
+
+/* Stil for hele dokumentet */
+body {
+  background-color: #b3acac;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Endre til flex-end for å plassere til høyre */
+  margin-bottom: 20px;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#resultsContainer,
+#favoritesContainer {
+  border: 1px solid #1f1e1e;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#favoritesContainer h2 {
+  text-align: center;
+}
+.book{
+  background-size: cover; /* For å dekke hele headeren */
+  color: #fff; /* Endre tekstfargen basert på behov, avhengig av bakgrunnsbildet */
+  padding: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+}
